@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>My Tasks</h1>
+      <p class="subtitle">Stay on top of your day</p>
+    </header>
+
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="100" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="done">Done</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <footer>
+      <span id="taskCount">0 tasks left</span>
+      <button id="clearDone">Clear Done</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
